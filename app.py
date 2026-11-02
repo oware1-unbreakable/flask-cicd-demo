@@ -8,7 +8,7 @@ def home():
     return jsonify({
         "application": "Flask CI/CD Demo",
         "status": "Running",
-        "version": "1.2"
+        "version": "1.3"
     })
 
 @app.route("/health")
