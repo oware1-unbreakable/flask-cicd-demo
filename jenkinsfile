@@ -3,6 +3,7 @@ pipeline {
     agent any
 
     stages {
+
         stage('Checkout') {
             steps {
                 echo 'Source code checked out from GitHub'
@@ -11,8 +12,8 @@ pipeline {
 
         stage('Verify') {
             steps {
-                sh 'pwd'
-                sh 'ls -la'
+                bat 'cd'
+                bat 'dir'
             }
         }
     }
